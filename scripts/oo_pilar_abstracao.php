@@ -45,7 +45,7 @@
 
         // métodos
         function resumirCadFunc() {
-            return "$this->nome possui $this->numFilhos filhos";
+            return $this->__get('nome') . ' possui ' .$this->__get('numFilhos') . ' filho(s)'; 
         }
 
         function modificarNumFilhos($numFilhos) {
@@ -60,5 +60,6 @@
     $func->__set('numFilhos', 3);
     $func->__set('salario', 1000);
     // echo $func->getNome() . ' possui ' . $func->getNumFilhos() . ' filho(s)';
-    echo $func->__get('nome') . ' possui ' . $func->__get('numFilhos') . ' filho(s)';
-    echo ' Salário: ' . $func->__get('salario');
+    // echo $func->__get('nome') . ' possui ' . $func->__get('numFilhos') . ' filho(s)';
+    // echo ' Salário: ' . $func->__get('salario');
+    echo $func->resumirCadFunc();
