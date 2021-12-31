@@ -14,3 +14,5 @@ Métodos Getters e Setters - manipulação dos atributos (comando __set() e __ge
 Construtor e Destrutor (Construct e Destruct) - Inicialização em função da instância
 
 HERANÇA - Reutilizável, Manutenção
+
+POLIMORFISMO - Sobrescrita de métodos
