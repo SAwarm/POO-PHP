@@ -3,9 +3,34 @@
     class Funcionario{
 
         // atributos
-        public $nome        = "José";
-        public $telefone    = '99 99999 9999';
-        public $numFilhos   = 2;
+        public $nome        = null;
+        public $telefone    = null;
+        public $numFilhos   = null;
+
+        //getters e setters
+        function setNome($nome) {
+            $this->nome = $nome;
+        }
+
+        function setTelefone($telefone) {
+            $this->telefone = $telefone;
+        }
+
+        function setNumFilhos($numFilhos) {
+            $this->numFilhos = $numFilhos;
+        }
+
+        function getNome() {
+            return $this->nome;
+        }
+
+        function getTelefone() {
+            return $this->telefone;
+        }
+
+        function getNumFilhos() {
+            return $this->numFilhos;
+        }
 
         // métodos
         function resumirCadFunc() {
@@ -18,8 +43,6 @@
     }
 
     $func = new Funcionario();
-    echo $func->resumirCadFunc();
-
-    $func->modificarNumFilhos(3);
-    echo '<br>';
-    echo $func->resumirCadFunc();
+    $func->setNome('Jonas');
+    $func->setNumFilhos(3);
+    echo $func->getNome() . ' possui ' . $func->getNumFilhos() . ' filho(s)';
