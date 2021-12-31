@@ -6,31 +6,42 @@
         public $nome        = null;
         public $telefone    = null;
         public $numFilhos   = null;
+        public $cargo       = null;
+        public $salario     = null;
+
+        //getters setters (overloading / sobrecargar)
+        function __set($atribute, $value) {
+            $this->$atribute = $value;
+        }
+
+        function __get($atribute) {
+            return $this->$atribute;
+        }
 
         //getters e setters
-        function setNome($nome) {
-            $this->nome = $nome;
-        }
+        // function setNome($nome) {
+        //     $this->nome = $nome;
+        // }
 
-        function setTelefone($telefone) {
-            $this->telefone = $telefone;
-        }
+        // function setTelefone($telefone) {
+        //     $this->telefone = $telefone;
+        // }
 
-        function setNumFilhos($numFilhos) {
-            $this->numFilhos = $numFilhos;
-        }
+        // function setNumFilhos($numFilhos) {
+        //     $this->numFilhos = $numFilhos;
+        // }
 
-        function getNome() {
-            return $this->nome;
-        }
+        // function getNome() {
+        //     return $this->nome;
+        // }
 
-        function getTelefone() {
-            return $this->telefone;
-        }
+        // function getTelefone() {
+        //     return $this->telefone;
+        // }
 
-        function getNumFilhos() {
-            return $this->numFilhos;
-        }
+        // function getNumFilhos() {
+        //     return $this->numFilhos;
+        // }
 
         // métodos
         function resumirCadFunc() {
@@ -43,6 +54,11 @@
     }
 
     $func = new Funcionario();
-    $func->setNome('Jonas');
-    $func->setNumFilhos(3);
-    echo $func->getNome() . ' possui ' . $func->getNumFilhos() . ' filho(s)';
+    // $func->setNome('Jonas');
+    // $func->setNumFilhos(3);
+    $func->__set('nome', 'Jonas');
+    $func->__set('numFilhos', 3);
+    $func->__set('salario', 1000);
+    // echo $func->getNome() . ' possui ' . $func->getNumFilhos() . ' filho(s)';
+    echo $func->__get('nome') . ' possui ' . $func->__get('numFilhos') . ' filho(s)';
+    echo ' Salário: ' . $func->__get('salario');
