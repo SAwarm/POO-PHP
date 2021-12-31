@@ -7,8 +7,10 @@ POO - classe que abstrai atributos
 
 POO (princípios) - Abstração, encapsulamento, herança e polimorfismo
 
-Abstração - Entidade, Identidade, Características, Ações
+ABSTRAÇÃO - Entidade, Identidade, Características, Ações
 
 Métodos Getters e Setters - manipulação dos atributos (comando __set() e __get())
 
 Construtor e Destrutor (Construct e Destruct) - Inicialização em função da instância
+
+HERANÇA - Reutilizável, Manutenção
