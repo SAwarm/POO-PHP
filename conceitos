@@ -16,3 +16,7 @@ Construtor e Destrutor (Construct e Destruct) - Inicialização em função da i
 HERANÇA - Reutilizável, Manutenção
 
 POLIMORFISMO - Sobrescrita de métodos
+
+ENCAPSULAMENTO - Encapsular objeto de forma a ficar seguro - contexto dos métodos __set e __get importa na recuperação dos atributos
+public e protected (função protected não é listada dentro dos métodos da classe filha) - são herdados
+private - não são herdados
