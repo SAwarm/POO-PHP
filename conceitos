@@ -20,3 +20,5 @@ POLIMORFISMO - Sobrescrita de métodos
 ENCAPSULAMENTO - Encapsular objeto de forma a ficar seguro - contexto dos métodos __set e __get importa na recuperação dos atributos
 public e protected (função protected não é listada dentro dos métodos da classe filha) - são herdados
 private - não são herdados
+
+Atributos e Métodos estáticos - são chamados de qualquer lugar do código (forma de chamada específica)
