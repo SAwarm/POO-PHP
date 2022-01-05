@@ -22,3 +22,5 @@ public e protected (função protected não é listada dentro dos métodos da cl
 private - não são herdados
 
 Atributos e Métodos estáticos - são chamados de qualquer lugar do código (forma de chamada específica)
+
+Namespace - funciona como um identificador de um escopo
