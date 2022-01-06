@@ -23,4 +23,6 @@ private - não são herdados
 
 Atributos e Métodos estáticos - são chamados de qualquer lugar do código (forma de chamada específica)
 
-Namespace - funciona como um identificador de um escopo (utilizado juntamento com o require)
+Namespace - funciona como um identificador de escopo (utilizado juntamento com o require)
+
+Tratamentos de erros - Try, Catch, Finally e Throw
